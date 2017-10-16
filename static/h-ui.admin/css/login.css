@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* -----------H-ui前端框架-------------
+* H-ui.login.css v2.2.1	后台登录页样式
+* http://www.h-ui.net/
+* Created & Modified by guojunhui
+* Date modified 2015.6.5
+*
+* Copyright 2013-2017 北京颖杰联创科技有限公司 All rights reserved.
+* Licensed under MIT license.
+* http://opensource.org/licenses/MIT
+*
+*/
+html, body {
+    height: 100%
+}
+
+body {
+    font-size: 14px
+}
+
+.header, .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99
+}
+
+.header {
+    top: 0;
+    height: 60px;
+    background: #426374 url(../images/logo.png) no-repeat 0 center
+}
+
+.loginWraper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    /*background: #3283AC url(../images/admin-login-bg.jpg) no-repeat center;*/
+    background-color: #1d2025;
+}
+.loginBox {
+    position: absolute;
+    width: 517px;
+    height: 500px;
+    border:6px solid #394456;
+    background-color: #f7f7f7;
+    left: 50%;
+    top: 50%;
+    margin-left: -309px;
+    margin-top: -184px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+@media (max-width: 617px) {
+    .loginbox {
+        width: 100%;
+        position: static;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.loginBox .row {
+    margin-top: 25px;
+}
+
+.loginBox .row .form-label .Hui-iconfont {
+    font-size: 24px
+}
+
+.loginBox .input-text {
+    width: 400px;
+}
+
+@media (max-width: 617px) {
+    .loginBox .input-text {
+        width: 80%
+    }
+}
+
+.yzm a {
+    color: #426374;
+    font-size: 12px
+}
+
+#span_msg {
+    font-size: 14px;
+    color: Red;
+    line-height: 40px;
+    height: 40px;
+    margin-left: 10px;
+    width: 160px;;
+    float: left
+}
+
+.hd_msg {
+    font-size: 12px;
+    color: #fff;
+    height: 30px;
+    z-index: 100;
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 5px
+}
+
+.hd_msg a {
+    color: #fff
+}
+
+.hd_msg a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.footer {
+    height: 46px;
+    line-height: 46px;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #426374
+}
+
+#ie6-warning {
+    background: #fff url(/jscss/demoimg/201006/warning.gif) no-repeat 3px center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    color: #333;
+    width: 97%;
+    padding: 2px 15px 2px 23px;
+    text-align: left
+}
+
+#ie6-warning a {
+    text-decoration: none
+}
+.col-xs-offset-3{
+    text-align: left;
+}
+/*输入框图标的样式*/
+.inp-icon{
+    position: absolute;
+    right: 86px;
+    top:5px
+}
+/*保持登录样式*/
+.logon-statu{
+    margin-top:40px;
+    padding:0;
+    width: 400px;
+    padding-right: 5px;
+    padding-left: 74px;
+    text-align: left;
+}
+.logon-statu .btn-primary{
+    float: right;
+}
+/*其他方式登陆的样式*/
+.dotted {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.dotted > span {
+    display: block;
+    position: relative;
+    color: #5a98de;
+}
+
+.dotted > span:before,
+.dotted > span:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    border-bottom: 1px dotted #ccc;
+    width: 20%;
+    height: 2px;
+}
+
+.dotted > span:before {
+    left: 10%;
+}
+
+.dotted > span:after {
+    right: 10%;
+}
+
+/*其他登录方式的图标*/
+.loginBox .other-login{
+    margin-top: 60px;
+}
+.other-login-icon {
+    text-align: center;
+}
+
+.other-login-icon > li {
+    display: inline-block;
+}
+
+.other-login-icon > li + li {
+    margin-right: 10px;
+}
+/*忘记密码和注册的样式*/
+.other-handle{
+    position: absolute;
+    bottom:0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 25px;
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    border-top:3px solid #587796;
+    background-color: #5090c0;
+}
+.other-handle a{
+    color:#faea95;
+    text-decoration: none;
+}
