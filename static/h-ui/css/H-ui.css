@@ -1,9 +1,9 @@
 @charset "utf-8";
 /* -----------H-ui前端框架-------------
-* H-ui.css v3.1.2
+* H-ui.css v3.1.5
 * http://www.h-ui.net/
 * Created & Modified by guojunhui
-* Date modified 2017.06.15
+* Date modified 2017.08.03
 *
 * Copyright 2013-2017 北京颖杰联创科技有限公司 All rights reserved.
 * Licensed under MIT license.
@@ -725,8 +725,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 			-moz-backface-visibility: hidden;
 			-ms-backface-visibility: hidden;
 	}
-	.wap-container{ height: 100%;width: 100%;min-width: 320px;max-width: 640px;
-     overflow: auto;}
+	.wap-container{ height: 100%;width: 100%;min-width: 320px;overflow: auto;}
 	body.sideBox-open .containBox-bg{bottom:0;right:0;}
 }
 /*2.3 常用布局
@@ -801,7 +800,7 @@ var{}	/*变量*/
 kbd{}	/*键盘文本*/
 code{}	/*计算机代码文本*/
 dfn{font-style: italic}	/*一个定义项目*/
-del{font-family:Simsun}	/*删除线*/
+del{}	/*删除线*/
 code,kbd,pre,samp {font-family: monospace, serif;font-size: 1em}
 pre{white-space: pre-wrap}	/*预格式化的文本*/
 .uppercase{text-transform:uppercase} /*文字大写*/
@@ -1866,7 +1865,7 @@ squid.swing.jselect()
 
 
 /*3.4.6 邮箱提示*/
-.emailSug-wrapper {position: absolute;background: #fff;text-align: left}
+.emailSug-wrapper {position: absolute;background: #fff;text-align: left;z-index: 99}
 .emailSug-wrapper .emailSug-list .emailSug-item {font-size: 14px;height: 25px;line-height: 25px;padding-left: 10px;color: #333}
 .emailSug-wrapper .emailSug-list .emailSug-item.active {background: #5a98de;cursor: pointer;color: #fff}
 
@@ -3554,6 +3553,11 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 .progress-bar-warning .sr-only{background-color: #f0ad4e}
 .progress-bar-danger .sr-only{background-color: #d9534f}
 
+.loading-wraper{ position: fixed; z-index: 2000; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(25,24,26,0.34)}
+.loading-wraper .loading-content{padding:10px 20px;width:auto;height:auto;background-color: #fff;border-radius: 10px;position: absolute;left:50%; top: 50%;marigin-left:-50px;margin-top:-40px;}
+.loading-wraper .loading-content .iconpic-loading{width: 40px; height: 40px;background:#fff url(../images/loading/iconpic-loading.gif) no-repeat center}
+.loading-wraper .loading-content .iconpic,.loading-wraper .loading-content span{ vertical-align: middle;font-size:14px;}
+
 /*4.10 对话框
 	Name:			mod_modal
 	Example:
@@ -3606,10 +3610,12 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 					box-shadow: 0 3px 9px rgba(0,0,0,.5)}
 		
 			.modal-header {min-height: 16.42857143px;padding: 15px;border-bottom: 1px solid #eee; position:relative}
-			.modal-header .close{position:absolute; right:10px; top:10px}
+			.modal-header .close{position:absolute; right:15px; top:15px}
+			.modal-close{position:absolute; right:15px; top:15px;font-size:24px; z-index: 9}
+			a.modal-close:hover{ text-decoration: none}
 			.modal-header h3,.modal-header .modal-title{margin:0; padding:10px 0; font-size:16px}
 			
-			.modal-body {position:relative;padding: 15px;overflow-y:visible;word-break:break-all}
+			.modal-body {position:relative;padding:15px;overflow-y:visible;word-break:break-all}
 				.modal-form {margin-bottom: 0}
 				
 			.modal-footer {padding:15px;margin-bottom: 0;text-align: right;background-color: #f5f5f5;border-top: 1px solid #eee;*zoom: 1}
@@ -3659,7 +3665,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 	.modal-alert-info{padding:30px; text-align:center; font-size:14px; background-color:#fff}
 
 
-.loading{height: 50px; background: url(../images/loading/loading-b.gif) no-repeat center}
+.loading{height: 50px; width: 50px; background:#fff url(../images/loading/loading-b.gif) no-repeat center}
 .mask{position:fixed;top:0;left:0;z-index:999;width:100%;height:100%;background-color:rgba(0,0,0,0.7);-moz-transition:all 0.3s ease-in;-webkit-transition:all 0.3s ease-in;-o-transition:all 0.3s ease-in;transition:all 0.3s ease-in}
 * html .mask{position:absolute;left:expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth);top:expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight)}
 
