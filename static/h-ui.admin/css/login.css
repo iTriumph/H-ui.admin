@@ -51,10 +51,11 @@ body {
     background-color: #f7f7f7;
     left: 50%;
     top: 50%;
-    margin-left: -309px;
-    margin-top: -184px;
+    margin-left: -258px;
+    margin-top: -286px;
     padding-top: 60px;
     text-align: center;
+    /*box-sizing: border-box;*/
 }
 
 @media (max-width: 617px) {
