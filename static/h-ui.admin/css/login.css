@@ -166,7 +166,9 @@ body {
     float: right;
 }
 .logon-statu label{
-    vertical-align: middle;
+    height: 25.2px;
+    line-height: 25.2px;
+    cursor: pointer;
 }
 .logon-statu .check-box{
     margin-top: 8px;
