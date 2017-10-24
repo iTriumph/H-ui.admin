@@ -45,16 +45,17 @@ body {
 }
 .loginBox {
     position: absolute;
-    width: 517px;
-    height: 500px;
+    width: 460px;
+    height: 480px;
     border:6px solid #394456;
     background-color: #f7f7f7;
     left: 50%;
     top: 50%;
-    margin-left: -309px;
-    margin-top: -184px;
-    padding-top: 60px;
+    margin-left: -244px;
+    margin-top: -266px;
+    padding-top: 40px;
     text-align: center;
+    /*box-sizing: border-box;*/
 }
 
 @media (max-width: 617px) {
@@ -149,7 +150,7 @@ body {
 /*输入框图标的样式*/
 .inp-icon{
     position: absolute;
-    right: 86px;
+    right: 54px;
     top:5px
 }
 /*保持登录样式*/
@@ -158,11 +159,17 @@ body {
     padding:0;
     width: 400px;
     padding-right: 5px;
-    padding-left: 74px;
+    padding-left: 45px;
     text-align: left;
 }
 .logon-statu .btn-primary{
     float: right;
+}
+.logon-statu label{
+    vertical-align: middle;
+}
+.logon-statu .check-box{
+    margin-top: 8px;
 }
 /*其他方式登陆的样式*/
 .dotted {
