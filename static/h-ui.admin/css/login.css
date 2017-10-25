@@ -165,13 +165,15 @@ body {
 .logon-statu .btn-primary{
     float: right;
 }
+.logon-statu .icheckbox-blue{
+    top:50%;
+    margin-top: -9px;
+}
 .logon-statu label{
-    height: 25.2px;
-    line-height: 25.2px;
     cursor: pointer;
 }
 .logon-statu .check-box{
-    margin-top: 8px;
+    line-height: 41px;
 }
 /*其他方式登陆的样式*/
 .dotted {
